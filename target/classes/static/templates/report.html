@@ -1,0 +1,48 @@
+<div class="container">
+
+  <div class="row" style="margin: 10px 0;">
+
+  </div>	
+
+  <div class="row">
+    <div class="col-md-8 col-lg-8 visible-md-block visible-lg-block"></div>
+    <div class="col-md-8 col-lg-8">
+
+      <h4>Start Date</h4>
+      <md-datepicker ng-model="input.start_date" md-placeholder="Enter start date"></md-datepicker>
+
+      <h4>End Date</h4>
+      <md-datepicker ng-model="input.end_date" md-placeholder="Enter end date"></md-datepicker><br/>
+
+      <h4>Tenant</h4>
+      <md-select ng-model="selectedTenant">
+        <md-option ng-value="tenant" ng-repeat="tenant in tenants">{{ tenant.name }}</md-option>
+      </md-select>   
+
+      <md-button class="md-raised" ng-click="generateReport()">Generate Report</md-button>      
+
+    </div>
+    <div class="col-md-8 col-lg-8 visible-md-block visible-lg-block"></div>
+  </div> 
+
+  <div class="row">
+    <div class="col-md-8 col-lg-8 visible-md-block visible-lg-block"></div>
+    <div class="col-md-8 col-lg-8" style="padding-top: 50px;">
+      <md-content>
+        <md-list>
+          <md-subheader class="md-no-sticky">Previously generated reports</md-subheader>
+          <md-list-item class="md-3-line" ng-repeat="file in files">
+            <img ng-src="img/pdf.png" class="md-avatar" />
+            <div class="md-list-item-text" layout="column">
+              <h3><strong>File name: </strong> <a target="_blank" src="_self" style="cursor: pointer;">{{file.name}}</a></h3>
+              <h4><strong>Created:</strong> {{file.created}}</h4>
+              <p><strong>Size:</strong> {{file.size}} byts</p>
+            </div>
+          </md-list-item>
+        </md-list>
+      </md-content>
+    </div>
+    <div class="col-md-8 col-lg-8 visible-md-block visible-lg-block"></div>    
+  </div> 
+
+</div>

@@ -1,0 +1,321 @@
+DEBUG: Using JAVA_HOME
+DEBUG: _PENTAHO_JAVA_HOME=c:\Java\jdk1.8.0_91\
+DEBUG: _PENTAHO_JAVA=c:\Java\jdk1.8.0_91\\bin\java.exe
+2016/05/10 16:21:19 - Pan - Start of run.
+2016/05/10 16:21:20 - Reporting - Dispatching started for transformation [Reporting]
+2016/05/10 16:21:20 - Get System Info.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/10 16:21:20 - Database join.0 - Finished processing (I=2, O=0, R=1, W=1, U=0, E=0)
+2016/05/10 16:21:20 - Create Template and Output paths.0 - Optimization level set to 9.
+2016/05/10 16:21:21 - Create Template and Output paths.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+INFO  10-05 16:21:21,270 - Current System Configuration
+----------------------------
+Internal.Cluster.Size                   1                                       
+Internal.Kettle.Build.Date              2013-11-15_16-08-58                     
+Internal.Kettle.Build.Version           1                                       
+Internal.Kettle.Version                 5.0.1-stable                            
+Internal.Slave.Server.Name              slave-trans-name                        
+Internal.Slave.Transformation.Number    0                                       
+Internal.Step.CopyNr                    0                                       
+Internal.Step.Name                      step-name                               
+Internal.Step.Partition.ID              partition-id                            
+Internal.Step.Partition.Number          0                                       
+Internal.Step.Unique.Count              1                                       
+Internal.Step.Unique.Number             0                                       
+KETTLE_HOME                                                                     
+KETTLE_JNDI_ROOT                                                                
+KETTLE_LOG_SIZE_LIMIT                                                           
+KETTLE_PASSWORD                                                                 
+KETTLE_PLUGIN_PACKAGES                                                          
+KETTLE_REPOSITORY                                                               
+KETTLE_USER                                                                     
+awt.toolkit                             sun.awt.windows.WToolkit                
+file.encoding                           Cp1250                                  
+file.encoding.pkg                       sun.io                                  
+file.separator                          \                                       
+java.awt.graphicsenv                    sun.awt.Win32GraphicsEnvironment        
+java.awt.printerjob                     sun.awt.windows.WPrinterJob             
+java.class.path                         d:\Programi\kettle50\kettle50\data-integration\launcher\pentaho-application-launcher-5.0.1-stable.jar
+java.class.version                      52.0                                    
+java.endorsed.dirs                      c:\Java\jdk1.8.0_91\jre\lib\endorsed    
+java.ext.dirs                           c:\Java\jdk1.8.0_91\jre\lib\ext;C:\Windows\Sun\Java\lib\ext
+java.home                               c:\Java\jdk1.8.0_91\jre                 
+java.io.tmpdir                          C:\Users\y046939\AppData\Local\Temp\    
+java.library.path                       d:\Programi\kettle50\kettle50\data-integration\libswt\win32
+java.naming.factory.initial             org.osjava.sj.SimpleContextFactory      
+java.runtime.name                       Java(TM) SE Runtime Environment         
+java.runtime.version                    1.8.0_91-b14                            
+java.specification.name                 Java Platform API Specification         
+java.specification.vendor               Oracle Corporation                      
+java.specification.version              1.8                                     
+java.vendor                             Oracle Corporation                      
+java.vendor.url                         http://java.oracle.com/                 
+java.vendor.url.bug                     http://bugreport.sun.com/bugreport/     
+java.version                            1.8.0_91                                
+java.vm.info                            mixed mode                              
+java.vm.name                            Java HotSpot(TM) 64-Bit Server VM       
+java.vm.specification.name              Java Virtual Machine Specification      
+java.vm.specification.vendor            Oracle Corporation                      
+java.vm.specification.version           1.8                                     
+java.vm.vendor                          Oracle Corporation                      
+java.vm.version                         25.91-b14                               
+line.separator                          \r\n                                    
+org.osjava.sj.delimiter                 /                                       
+org.osjava.sj.root                      D:\DATA\y046939\Documents\workspace-sts-3.7.3.RELEASE\Reporting-Demo\simple-jndi
+os.arch                                 amd64                                   
+os.name                                 Windows 7                               
+os.version                              6.1                                     
+path.separator                          ;                                       
+sun.arch.data.model                     64                                      
+sun.boot.class.path                     c:\Java\jdk1.8.0_91\jre\lib\resources.jar;
+                                        c:\Java\jdk1.8.0_91\jre\lib\rt.jar;
+                                        c:\Java\jdk1.8.0_91\jre\lib\sunrsasign.jar;
+                                        c:\Java\jdk1.8.0_91\jre\lib\jsse.jar;
+                                        c:\Java\jdk1.8.0_91\jre\lib\jce.jar;
+                                        c:\Java\jdk1.8.0_91\jre\lib\charsets.jar;
+                                        c:\Java\jdk1.8.0_91\jre\lib\jfr.jar;
+                                        c:\Java\jdk1.8.0_91\jre\classes
+sun.boot.library.path                   c:\Java\jdk1.8.0_91\jre\bin             
+sun.cpu.endian                          little                                  
+sun.cpu.isalist                         amd64                                   
+sun.desktop                             windows                                 
+sun.io.unicode.encoding                 UnicodeLittle                           
+sun.java.command                        d:\Programi\kettle50\kettle50\data-integration\launcher\pentaho-application-launcher-5.0.1-stable.jar -main org.pentaho.di.pan.Pan -file=c:\tmp\Reporting\Reports\Reporting\KettleAutoReporting.ktr '2016-01-01' '2016-05-03' 29 -Level=Logging
+sun.java.launcher                       SUN_STANDARD                            
+sun.jnu.encoding                        Cp1250                                  
+sun.management.compiler                 HotSpot 64-Bit Tiered Compilers         
+sun.os.patch.level                      Service Pack 1                          
+user.country                            US                                      
+user.country.format                     HR                                      
+user.dir                                D:\DATA\y046939\Documents\workspace-sts-3.7.3.RELEASE\Reporting-Demo
+user.home                               C:\Users\y046939                        
+user.language                           en                                      
+user.language.format                    hr                                      
+user.name                               y046939                                 
+user.script                                                                     
+user.timezone                           Europe/Belgrade                         
+user.variant                                                                    
+
+
+Current System Environment Variables
+------------------------------------
+=D:                                     D:\DATA\y046939\Documents\workspace-sts-3.7.3.RELEASE\Reporting-Demo
+ALLUSERSPROFILE                         C:\ProgramData                          
+ANDROID_HOME                            c:\android-sdk\sdk\                     
+ANDROID_SDK_HOM                         C:\Users\y046939                        
+ANT_HOME                                c:\Program Files (x86)\Ant\apache-ant-1.9.0\
+APPDATA                                 C:\Users\y046939\AppData\Roaming        
+AXIS2_HOME                              d:\DATA\Java\tools\axis2-1.5.2\         
+CLASSPATH                               c:\Program Files\Apache Software Foundation\Tomcat 7.0\lib\;
+                                        c:\evp_Tools\jdk1.6.0_04\bin\;
+                                        C:\PROGRA~1\SQLLIB\java\db2java.zip;
+                                        C:\PROGRA~1\SQLLIB\java\db2jcc.jar;
+                                        C:\PROGRA~1\SQLLIB\java\db2jcc_license_cu.jar;
+                                        C:\PROGRA~1\SQLLIB\bin;
+                                        C:\blagajna\lib;
+                                        c:\eVP\webserviceGNTClient\WebContent\WEB-INF\lib;
+                                        c:\evp_Tools\jdk1.6.0_04\jre\lib;
+                                        d:\DATA\Java\tools\axis2-1.5.2\lib\;
+                                        d:\DATA\y046939\workspace\DohvatStranke\lib\;
+                                        .;
+                                        C:\PROGRA~2\IBM\SQLLIB\java\db2java.zip;
+                                        C:\PROGRA~2\IBM\SQLLIB\java\db2jcc.jar;
+                                        C:\PROGRA~2\IBM\SQLLIB\java\db2jcc_license_cu.jar;
+                                        C:\PROGRA~2\IBM\SQLLIB\bin
+COMPUTERNAME                            HRGPWL0053                              
+CWD                                     D:\DATA\y046939\Documents\workspace-sts-3.7.3.RELEASE\Reporting-Demo
+ComSpec                                 C:\Windows\system32\cmd.exe             
+CommonProgramFiles                      C:\Program Files\Common Files           
+CommonProgramFiles(x86)                 C:\Program Files (x86)\Common Files     
+CommonProgramW6432                      C:\Program Files\Common Files           
+DB2INSTANCE                             DB2                                     
+FP_NO_HOST_CHECK                        NO                                      
+HOMEDRIVE                               H:                                      
+HOMEPATH                                \                                       
+HOMESHARE                               \\HR000000SF001\home$\y046939           
+JAVA_HOME                               c:\Java\jdk1.8.0_91\                    
+JAVA_HOME_OLD                           c:\evp_Tools\jdk1.6.0_38                
+JAVA_OPTS                               -Djavax.net.ssl.keyStoreType="jks" -Djavax.net.ssl.keyStore="c:\eVP\Adapter-CRO\src\webapp\WEB-INF\certs\PC201406246190.jks" -Djavax.net.ssl.keyStorePassword="hhdf54325SDFGdf465356THGhdgh2456"
+KETTLE_DIR                              d:\Programi\kettle50\kettle50\data-integration
+LOCALAPPDATA                            C:\Users\y046939\AppData\Local          
+LOGONSERVER                             \\HR00SDC002                            
+M2_HOME                                 c:\Java\apache-maven-3.3.9              
+MAVEN_HOME                              c:\Java\apache-maven-3.3.9\             
+MOZ_PLUGIN_PATH                         C:\Program Files (x86)\Foxit Software\Foxit Reader\plugins\
+NUMBER_OF_PROCESSORS                    4                                       
+OPT                                     "-Xmx512m" "-Djava.library.path=d:\Programi\kettle50\kettle50\data-integration\libswt\win32" "-DKETTLE_HOME=" "-DKETTLE_REPOSITORY=" "-DKETTLE_USER=" "-DKETTLE_PASSWORD=" "-DKETTLE_PLUGIN_PACKAGES=" "-DKETTLE_LOG_SIZE_LIMIT="  "-DKETTLE_JNDI_ROOT="
+OS                                      Windows_NT                              
+PATHEXT                                 .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+PENTAHO_DI_JAVA_OPTIONS                 -Xmx512m                                
+PROCESSOR_ARCHITECTURE                  AMD64                                   
+PROCESSOR_IDENTIFIER                    Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
+PROCESSOR_LEVEL                         6                                       
+PROCESSOR_REVISION                      3a09                                    
+PROMPT                                  $P$G                                    
+PSModulePath                            C:\Windows\system32\WindowsPowerShell\v1.0\Modules\
+PUBLIC                                  C:\Users\Public                         
+Path                                    C:/Program Files/Java/jre1.8.0_91/bin/server;
+                                        C:/Program Files/Java/jre1.8.0_91/bin;
+                                        C:/Program Files/Java/jre1.8.0_91/lib/amd64;
+                                        C:\ProgramData\Oracle\Java\javapath;
+                                        C:\Python27\;
+                                        C:\Python27\Scripts;
+                                        D:\oracle2\product\12.1.0\client_1;
+                                        D:\oracle2\product\12.1.0\client_1\bin;
+                                        D:\oracle\product\11.2.0\client_1\;
+                                        D:\oracle\product\11.2.0\client_1\bin;
+                                        C:\Perl64\site\bin;
+                                        C:\Perl64\bin;
+                                        C:\Windows\system32;
+                                        C:\Windows;
+                                        C:\Windows\System32\Wbem;
+                                        C:\Windows\System32\WindowsPowerShell\v1.0\;
+                                        c:\Program Files\Java\jre7\bin\;
+                                        c:\Perl64\bin\;
+                                        d:\DATA\Java\tools\axis2-1.5.2\bin\;
+                                        c:\dev\sbt\;
+                                        c:\Program Files (x86)\Microsoft Office\Office10\;
+                                        c:\Program Files\SQLLIB\bin\;
+                                        C:\PROGRA~2\IBM\SQLLIB\BIN;
+                                        C:\PROGRA~2\IBM\SQLLIB\FUNCTION;
+                                        c:\Users\y046939\AppData\Local\GitHub\PortableGit_93e8418133eb85e81a81e5e19c272776524496c6\bin\;
+                                        c:\evp_Tools\jdk1.6.0_04\\bin;
+                                        c:\Program Files (x86)\Ant\apache-ant-1.9.0\\bin;
+                                        c:\android-sdk\sdk\\platform-tools;
+                                        c:\android-sdk\sdk\\tools;
+                                        d:\wamp\bin\php\php5.4.3\;
+                                        d:\wamp\www\GeneraliFacebook\vendor\generator\bin\;
+                                        d:\Programi\kettle50\kettle50\data-integration\;
+                                        C:\Program Files (x86)\Kaspersky Lab\Kaspersky Endpoint Security 10 for Windows\;
+                                        c:\Users\y046939\AppData\Local\Android\sdk\platform-tools\;
+                                        c:\Python27\;
+                                        c:\Python27\Scripts\;
+                                        c:\Program Files\Microsoft Visual Studio 8\VC\vcpackages\;
+                                        C:\Program Files\nodejs\;
+                                        D:\JavaScript\nodejs;
+                                        C:\Program Files (x86)\Skype\Phone\;
+                                        c:\Program Files\Sublime Text 3\;
+                                        C:\Program Files\apache-maven\apache-maven-3.3.9\bin;
+                                        c:\Program Files\Kettle6.0\;
+                                        C:\Users\y046939\AppData\Local\.meteor\;
+                                        C:\Users\y046939\AppData\Roaming\npm;
+                                        c:\Java\apache-maven-3.3.9\bin;
+                                        C:\Program Files\sts\sts-3.7.3.RELEASE;
+                                        
+ProgramData                             C:\ProgramData                          
+ProgramFiles                            C:\Program Files                        
+ProgramFiles(x86)                       C:\Program Files (x86)                  
+ProgramW6432                            C:\Program Files                        
+SESSIONNAME                             Console                                 
+SSH_AGENT_PID                           4280                                    
+SSH_AUTH_SOCK                           /tmp/ssh-jusNwi6928/agent.6928          
+SystemDrive                             C:                                      
+SystemRoot                              C:\Windows                              
+TEMP                                    C:\Users\y046939\AppData\Local\Temp     
+TMP                                     C:\Users\y046939\AppData\Local\Temp     
+UATDATA                                 C:\Windows\SysWOW64\CCM\UATData\D9F8C395-CAB8-491d-B8AC-179A1FE1BE77
+USERDNSDOMAIN                           GPHR.CORP.LOCAL                         
+USERDOMAIN                              GPHR                                    
+USERNAME                                y046939                                 
+USERPROFILE                             C:\Users\y046939                        
+_PENTAHO_JAVA                           c:\Java\jdk1.8.0_91\\bin\java.exe       
+_PENTAHO_JAVA_HOME                      c:\Java\jdk1.8.0_91\                    
+__LAUNCHER                              java.exe                                
+windir                                  C:\Windows                              
+
+
+Other Properties
+----------------
+File.CurrentDirAbs                      D:\DATA\y046939\Documents\workspace-sts-3.7.3.RELEASE\Reporting-Demo\.
+File.CurrentDirCanonical                D:\DATA\y046939\Documents\workspace-sts-3.7.3.RELEASE\Reporting-Demo
+UIManager.LookAndFeel                   javax.swing.plaf.metal.MetalLookAndFeel 
+Toolkit                                 sun.awt.windows.WToolkit                
+Toolkit.MenuShortcutKeyMask             2                                       
+Toolkit.ScreenResolution                96                                      
+Toolkit.ScreenSize                      java.awt.Dimension[width=1600,height=900]
+Runtime.availableProcessors             4                                       
+Runtime.maximumMemory                   477626368                               
+awt.mouse.numButtons                    5                                       
+awt.multiClickInterval                  500                                     
+DnD.Autoscroll.initialDelay             50                                      
+DnD.Autoscroll.interval                 50                                      
+DnD.Cursor.CopyDrop                     sun.awt.windows.WCustomCursor[CopyDrop32x32]
+DnD.Cursor.CopyNoDrop                   sun.awt.windows.WCustomCursor[CopyNoDrop32x32]
+DnD.Cursor.LinkDrop                     sun.awt.windows.WCustomCursor[LinkDrop32x32]
+DnD.Cursor.LinkNoDrop                   sun.awt.windows.WCustomCursor[LinkNoDrop32x32]
+DnD.Cursor.MoveDrop                     sun.awt.windows.WCustomCursor[MoveDrop32x32]
+DnD.Cursor.MoveNoDrop                   sun.awt.windows.WCustomCursor[MoveNoDrop32x32]
+DnD.gestureMotionThreshold              2                                       
+Shell.shellFolderManager                sun.awt.shell.Win32ShellFolderManager2  
+win.3d.backgroundColor                  java.awt.Color[r=240,g=240,b=240]       
+win.3d.darkShadowColor                  java.awt.Color[r=105,g=105,b=105]       
+win.3d.highlightColor                   java.awt.Color[r=255,g=255,b=255]       
+win.3d.lightColor                       java.awt.Color[r=227,g=227,b=227]       
+win.3d.shadowColor                      java.awt.Color[r=160,g=160,b=160]       
+win.ansiFixed.font                      java.awt.Font[family=Monospaced,name=Monospaced,style=plain,size=9]
+win.button.textColor                    java.awt.Color[r=0,g=0,b=0]             
+win.defaultGUI.font                     java.awt.Font[family=Tahoma,name=Tahoma,style=plain,size=11]
+win.frame.backgroundColor               java.awt.Color[r=255,g=255,b=255]       
+win.frame.textColor                     java.awt.Color[r=0,g=0,b=0]             
+win.item.highlightColor                 java.awt.Color[r=51,g=153,b=255]        
+win.item.highlightTextColor             java.awt.Color[r=255,g=255,b=255]       
+win.menu.backgroundColor                java.awt.Color[r=240,g=240,b=240]       
+win.menubar.backgroundColor             java.awt.Color[r=240,g=240,b=240]       
+win.menu.font                           java.awt.Font[family=Segoe UI,name=Segoe UI,style=plain,size=12]
+win.menu.keyboardCuesOn                 false                                   
+win.menu.textColor                      java.awt.Color[r=0,g=0,b=0]             
+win.scrollbar.backgroundColor           java.awt.Color[r=200,g=200,b=200]       
+win.scrollbar.width                     17                                      
+win.text.grayedTextColor                java.awt.Color[r=109,g=109,b=109]       
+win.xpstyle.colorName                   NormalColor                             
+win.xpstyle.dllName                     C:\Windows\resources\Themes\Aero\Aero.msstyles
+win.xpstyle.sizeName                    NormalSize                              
+win.xpstyle.themeActive                 true                                    
+
+
+
+INFO  10-05 16:21:21,530 - LibBase 5.0.1-stable.-1 started.
+INFO  10-05 16:21:21,573 - LibLoader 5.0.1-stable.-1 started.
+INFO  10-05 16:21:21,575 - LibFonts 5.0.1-stable.-1 started.
+INFO  10-05 16:21:21,580 - LibSerializer 5.0.1-stable.-1 started.
+INFO  10-05 16:21:21,582 - LibFormula 5.0.1-stable.-1 started.
+INFO  10-05 16:21:21,582 - LibFormat 5.0.1-stable.-1 started.
+INFO  10-05 16:21:21,587 - LibXML 5.0.1-stable.-1 started.
+INFO  10-05 16:21:21,587 - LibRepository 5.0.1-stable.-1 started.
+INFO  10-05 16:21:21,604 - LibDocBundle 5.0.1-stable.-1 started.
+WARN  10-05 16:21:22,030 - Failed to create data cache: org/slf4j/LoggerFactory
+WARN  10-05 16:21:22,030 - Failed to create data cache: Could not initialize class net.sf.ehcache.CacheManager
+WARN  10-05 16:21:22,031 - Failed to create factory cache: Could not initialize class net.sf.ehcache.CacheManager
+INFO  10-05 16:21:22,867 - Completed font registration.
+INFO  10-05 16:21:22,873 - Completed font registration.
+INFO  10-05 16:21:22,879 - Completed font registration.
+INFO  10-05 16:21:24,598 - Pentaho Reporting Engine Classic 5.0.1-stable.-1 started.
+WARN  10-05 16:21:24,785 - Configured configuration-properties based override for global read-hander. Change your code to use proper module-initializers instead. This method of configuring the parser will go away in the next major version.
+INFO  10-05 16:21:25,393 - Unable to create valid cache, returning <null>
+WARN  10-05 16:21:25,672 - Warning: Data-Set does not contain a column with name 'Report Type'
+INFO  10-05 16:21:25,964 - Performance: class org.pentaho.reporting.engine.classic.core.function.sys.AttributeExpressionsEvaluator => total=32, evaluated=12 (37,500000%), avoided=20 (62,500000%)
+INFO  10-05 16:21:25,965 - Performance: class org.pentaho.reporting.engine.classic.core.function.sys.SheetNameFunction => total=0, evaluated=0 (0,000000%), avoided=0 (0,000000%)
+INFO  10-05 16:21:25,965 - Performance: class org.pentaho.reporting.engine.classic.core.function.sys.MetaDataStyleEvaluator => total=32, evaluated=12 (37,500000%), avoided=20 (62,500000%)
+INFO  10-05 16:21:25,965 - Performance: class org.pentaho.reporting.engine.classic.core.function.sys.WizardItemHideFunction => total=32, evaluated=12 (37,500000%), avoided=20 (62,500000%)
+INFO  10-05 16:21:25,965 - Performance: class org.pentaho.reporting.engine.classic.core.function.sys.StyleExpressionsEvaluator => total=32, evaluated=12 (37,500000%), avoided=20 (62,500000%)
+INFO  10-05 16:21:25,965 - Performance: class org.pentaho.reporting.engine.classic.core.function.sys.CellFormatFunction => total=0, evaluated=0 (0,000000%), avoided=0 (0,000000%)
+INFO  10-05 16:21:25,966 - Performance: class org.pentaho.reporting.engine.classic.core.function.sys.StyleResolvingEvaluator => total=32, evaluated=17 (53,125000%), avoided=15 (46,875000%)
+INFO  10-05 16:21:25,966 - Performance: class org.pentaho.reporting.engine.classic.core.layout.output.ElementChangeChecker => total=8, evaluated=2 (25,000000%), avoided=6 (75,000000%)
+INFO  10-05 16:21:25,966 - Performance: footer-printed=4 footer-avoided=6repeating-footer-printed=2 repeating-footer-avoided=8
+INFO  10-05 16:21:26,192 - Performance: class org.pentaho.reporting.engine.classic.core.function.sys.AttributeExpressionsEvaluator => total=32, evaluated=12 (37,500000%), avoided=20 (62,500000%)
+INFO  10-05 16:21:26,192 - Performance: class org.pentaho.reporting.engine.classic.core.function.sys.SheetNameFunction => total=0, evaluated=0 (0,000000%), avoided=0 (0,000000%)
+INFO  10-05 16:21:26,193 - Performance: class org.pentaho.reporting.engine.classic.core.function.sys.MetaDataStyleEvaluator => total=32, evaluated=12 (37,500000%), avoided=20 (62,500000%)
+INFO  10-05 16:21:26,193 - Performance: class org.pentaho.reporting.engine.classic.core.function.sys.WizardItemHideFunction => total=32, evaluated=12 (37,500000%), avoided=20 (62,500000%)
+INFO  10-05 16:21:26,193 - Performance: class org.pentaho.reporting.engine.classic.core.function.sys.StyleExpressionsEvaluator => total=32, evaluated=12 (37,500000%), avoided=20 (62,500000%)
+INFO  10-05 16:21:26,193 - Performance: class org.pentaho.reporting.engine.classic.core.function.sys.CellFormatFunction => total=0, evaluated=0 (0,000000%), avoided=0 (0,000000%)
+INFO  10-05 16:21:26,194 - Performance: class org.pentaho.reporting.engine.classic.core.function.sys.StyleResolvingEvaluator => total=32, evaluated=17 (53,125000%), avoided=15 (46,875000%)
+INFO  10-05 16:21:26,194 - Performance: class org.pentaho.reporting.engine.classic.core.layout.output.ElementChangeChecker => total=17, evaluated=4 (23,529411%), avoided=13 (76,470589%)
+INFO  10-05 16:21:26,194 - Performance: footer-printed=4 footer-avoided=6repeating-footer-printed=2 repeating-footer-avoided=8
+2016/05/10 16:21:26 - Generate Reports.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/10 16:21:26 - Pan - Finished!
+2016/05/10 16:21:26 - Pan - Start=2016/05/10 16:21:19.789, Stop=2016/05/10 16:21:26.445
+2016/05/10 16:21:26 - Pan - Processing ended after 6 seconds.
+2016/05/10 16:21:26 - Reporting -  
+2016/05/10 16:21:26 - Reporting - Step Create Template and Output paths.0 ended successfully, processed 1 lines. ( 0 lines/s)
+2016/05/10 16:21:26 - Reporting - Step Generate Reports.0 ended successfully, processed 1 lines. ( 0 lines/s)
+2016/05/10 16:21:26 - Reporting - Step Get System Info.0 ended successfully, processed 1 lines. ( 0 lines/s)
+2016/05/10 16:21:26 - Reporting - Step Database join.0 ended successfully, processed 1 lines. ( 0 lines/s)
