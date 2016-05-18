@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Implementation-Title: Reporting-Demo
 Implementation-Version: 1.0
-Built-By: y046939
+Built-By: Gajotres
 Implementation-Vendor-Id: amos.reporting.demo
-Build-Jdk: 1.8.0_91
+Build-Jdk: 1.8.0_60
 Created-By: Maven Integration for Eclipse
 Implementation-Vendor: Pivotal Software, Inc.
 
