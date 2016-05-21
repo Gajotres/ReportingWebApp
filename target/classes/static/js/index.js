@@ -1,7 +1,11 @@
 var reporting = angular.module('reporting', ['ngRoute','ngMaterial','angular.filter','ngMessages']);
 
 reporting.constant("serverConstants", {
-    "serverPath": "http://localhost:8080/"
+    "serverPath": "http://localhost:8093/"
+});
+
+reporting.constant("reportConstants", {
+    "reportList": [{ name: 'Report01' }]
 });
 
 reporting.config(function($routeProvider, $locationProvider, $mdDateLocaleProvider) {
@@ -34,29 +38,55 @@ reporting.controller('ReportCtrl', [
         end_date : new Date()
       }
 
-      $scope.tenants = [
+      /*$scope.tenants = [
         { id: 29, name: 'ABSI' },
         { id: 30, name: 'APEIRON' }
       ];
 
-      $scope.selectedTenant = { id: 29, name: 'Bob' };
+      $scope.selectedTenant = { id: 29, name: 'Bob' };*/
+
+      $scope.showLoader = false;      
 
       $scope.generateReport = function() {
-        $http.post(serverConstants.serverPath + 'generate/report01', {
+        $scope.showLoader = !$scope.showLoader;
+        $http.post(serverConstants.serverPath + 'generate/Report01', {
           start_date: moment($scope.input.start_date).format('YYYY-MM-DD'),
           end_date: moment($scope.input.end_date).format('YYYY-MM-DD'),
           tenant_id: $scope.selectedTenant.id
         }).success(function(data) {
-            console.log('Employee profile updated');
+            $scope.showLoader = !$scope.showLoader;
+            $scope.getListOfReports();
         });
       }
 
       $scope.getListOfReports = function() {
-        $http.get('http://localhost:8080/generate/list/sfsd').success(function(data) {
+        $http.get(serverConstants.serverPath + 'generate/list/Report01').success(function(data) {
           $scope.files = data;
         });        
       }
 
+      $scope.getListOfTenents = function() {
+        $http.get(serverConstants.serverPath + 'generate/getTenantList').success(function(data) {
+          $scope.tenants = data;
+        });        
+      }
+
+      $scope.downloadReport = function(fileName) {
+
+        var a = document.createElement("a");
+        document.body.appendChild(a);
+        a.style = "display: none";
+
+        $http.get(serverConstants.serverPath + 'generate/get/Report01/file/' + fileName, { responseType: 'arraybuffer' }).then(function (response) {
+            var file = new Blob([response.data], {type: 'application/pdf'});
+            var fileURL = window.URL.createObjectURL(file);
+            a.href = fileURL;
+            a.download = fileName;
+            a.click();          
+        });
+      }
+
+      $scope.getListOfTenents();
       $scope.getListOfReports();
     }
 ]);

@@ -5,6 +5,7 @@ public class Report01 {
 	private int tenant_id;
 	private String start_date;
 	private String end_date;
+	private String tenantName;
 	
 	public int getTenant_id() {
 		return tenant_id;
@@ -23,5 +24,11 @@ public class Report01 {
 	}
 	public void setEnd_date(String end_date) {
 		this.end_date = end_date;
+	}
+	public String getTenantName() {
+		return tenantName;
+	}
+	public void setTenantName(String tenantName) {
+		this.tenantName = tenantName;
 	}
 }

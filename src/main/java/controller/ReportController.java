@@ -1,21 +1,26 @@
 package controller;
 
-import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.List;
-
+import java.net.MalformedURLException;
+import java.net.URISyntaxException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.nio.file.attribute.BasicFileAttributes;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.validation.Valid;
 
 import org.apache.commons.io.IOUtils;
+import org.pentaho.di.cluster.SlaveServer;
+import org.pentaho.di.core.KettleClientEnvironment;
+import org.pentaho.di.core.KettleEnvironment;
+import org.pentaho.di.pan.Pan;
+import org.pentaho.di.www.Carte;
+import org.pentaho.di.www.SlaveServerConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -30,9 +35,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import dao.TenantsDao;
+import model.Report01;
 import model.ReportFile;
 import model.Tenants;
-import model.Report01;
 import service.ReportService;
 
 
@@ -61,33 +66,35 @@ public class ReportController {
 	    	
 	    	int tenantId = report01.getTenant_id();
 	    	String startDate = report01.getStart_date();
-	    	String endDate = report01.getEnd_date();	 
-	    		    	
-            Runtime rt = Runtime.getRuntime();
-            Process pr = rt.exec("c:\\Program Files\\Kettle6.0\\pan.bat /rep:\"Repo\" /trans:\"ReportingTest\" \"" + startDate + "\" \"" + endDate + "\" " + tenantId + " /user:admin /pass:admin /dir:\"/Jednokratni/\" /level:Basic > log.txt");
+	    	String endDate = report01.getEnd_date();
+            Tenants tenants = eDao.findById(tenantId);
             
-            BufferedReader input = new BufferedReader(new InputStreamReader(pr.getInputStream()));
+            String [] paramPANArray=new String[] {"/rep:QDXX", "/trans:310_GenerateReport", "/param:DATE_FROM=" + startDate + " 00:00:00.0", "/param:DATE_TO=" + endDate + " 00:00:00.0", "/param:TENANT_NAME=" + tenants.getName(), "/user:admin", "/pass:", "/dir:/Reports/"};
+                      
+            MyPan myPan = new MyPan();
+            myPan.generateReport(paramPANArray);
             
-            String line=null;
-
-            while((line=input.readLine()) != null) {
-                System.out.println(line);
-            }
-
-            int exitVal = pr.waitFor();
-                                    
 	    } catch (Exception ex) {
 	    	System.out.println("Error getting report parameters: " + ex.toString());  
 	    }
 	    
 	    return true;
     } 
-    
+
     @CrossOrigin()
     @RequestMapping("/list/{name}")
-    public List<ReportFile> getListOfReportFiles (@PathVariable("name") String name) {
+    public List<ReportFile> getListOfReportFiles (@PathVariable("name") String name) throws URISyntaxException, MalformedURLException {
+    	    	
     	
-    	String reportLocation = "c:\\Programiranje\\Reporting\\" + name + "\\output\\";     	
+    	System.out.println("****************************");
+    	System.out.println(ReportController.class.getProtectionDomain().getCodeSource().getLocation().toURI());
+    	System.out.println(ReportController.class.getProtectionDomain().getCodeSource().getLocation().toURI().toURL());
+    	System.out.println(ReportController.class.getProtectionDomain().getCodeSource().getLocation().toURI().getRawPath());
+    	System.out.println(ReportController.class.getProtectionDomain().getCodeSource().getLocation().toURI().getPath());
+    	System.out.println(rs.getRelativeJarPath());
+    	System.out.println("****************************");
+    	
+    	String reportLocation = rs.getRelativeJarPath() + "\\" + name + "\\output\\";     	
     	File folder = new File(reportLocation);
     	List<ReportFile> fList = listFilesForFolder(folder);
     	    	
@@ -101,7 +108,7 @@ public class ReportController {
         FileInputStream fileStream;
         try {
         	
-        	String fileAbsolutePath = "c:\\Programiranje\\Reporting\\" + name + "\\output\\" + filename + ".pdf";
+        	String fileAbsolutePath = rs.getRelativeJarPath() + "\\" + name + "\\output\\" + filename + ".pdf";
         	
             fileStream = new FileInputStream(new File(fileAbsolutePath));
             

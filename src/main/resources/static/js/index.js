@@ -1,7 +1,7 @@
 var reporting = angular.module('reporting', ['ngRoute','ngMaterial','angular.filter','ngMessages']);
 
 reporting.constant("serverConstants", {
-    "serverPath": "http://localhost:8080/"
+    "serverPath": "http://localhost:8093/"
 });
 
 reporting.constant("reportConstants", {

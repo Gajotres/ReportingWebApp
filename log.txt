@@ -1,112 +1,151 @@
 DEBUG: Using JAVA_HOME
-DEBUG: _PENTAHO_JAVA_HOME=c:\Program Files\Java\jdk1.8.0_25\
-DEBUG: _PENTAHO_JAVA=c:\Program Files\Java\jdk1.8.0_25\\bin\java.exe
+DEBUG: _PENTAHO_JAVA_HOME=C:\Program Files\Java\jdk1.8.0_66
+DEBUG: _PENTAHO_JAVA=C:\Program Files\Java\jdk1.8.0_66\bin\java.exe
 
-c:\Program Files\Kettle6.0>"c:\Program Files\Java\jdk1.8.0_25\\bin\java.exe"  "-Xms1024m" "-Xmx2048m" "-XX:MaxPermSize=256m" "-Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2" "-Djava.library.path=libswt\win64" "-DKETTLE_HOME=" "-DKETTLE_REPOSITORY=" "-DKETTLE_USER=" "-DKETTLE_PASSWORD=" "-DKETTLE_PLUGIN_PACKAGES=" "-DKETTLE_LOG_SIZE_LIMIT=" "-DKETTLE_JNDI_ROOT=" -jar launcher\pentaho-application-launcher-6.1.0.1-196.jar -lib ..\libswt\win64  -main org.pentaho.di.pan.Pan /rep:"Repo" /trans:"ReportingTest" "2016-05-19" "2016-05-19" 29 /user:admin /pass:admin /dir:"/Jednokratni/" /level:Basic 
-00:05:14,150 ERROR [KarafBoot] Unable to create symlink C:\Users\Gajotres\AppData\Local\Temp\karaf6539595589422774925\lib -> c:\Program Files\Kettle6.0\.\system\karaf\lib
-java.nio.file.FileSystemException: C:\Users\Gajotres\AppData\Local\Temp\karaf6539595589422774925\lib: A required privilege is not held by the client.
-
-	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:86)
-	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
-	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
-	at sun.nio.fs.WindowsFileSystemProvider.createSymbolicLink(WindowsFileSystemProvider.java:585)
-	at java.nio.file.Files.createSymbolicLink(Files.java:1043)
-	at org.pentaho.platform.osgi.KarafBoot$2.accept(KarafBoot.java:168)
-	at java.io.File.listFiles(File.java:1291)
-	at org.apache.commons.io.FileUtils.doCopyDirectory(FileUtils.java:1203)
-	at org.apache.commons.io.FileUtils.copyDirectory(FileUtils.java:1186)
-	at org.apache.commons.io.FileUtils.copyDirectory(FileUtils.java:1107)
-	at org.pentaho.platform.osgi.KarafBoot.startup(KarafBoot.java:158)
-	at org.pentaho.di.osgi.registryExtension.OSGIPluginRegistryExtension.init(OSGIPluginRegistryExtension.java:105)
-	at org.pentaho.di.core.plugins.PluginRegistry.init(PluginRegistry.java:557)
-	at org.pentaho.di.core.KettleClientEnvironment.init(KettleClientEnvironment.java:101)
-	at org.pentaho.di.core.KettleEnvironment.init(KettleEnvironment.java:97)
-	at org.pentaho.di.core.KettleEnvironment.init(KettleEnvironment.java:75)
-	at org.pentaho.di.pan.Pan.main(Pan.java:70)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
-	at org.pentaho.commons.launcher.Launcher.main(Launcher.java:92)
-00:05:14,153 ERROR [KarafBoot] Unable to create symlink C:\Users\Gajotres\AppData\Local\Temp\karaf6539595589422774925\system -> c:\Program Files\Kettle6.0\.\system\karaf\system
-java.nio.file.FileSystemException: C:\Users\Gajotres\AppData\Local\Temp\karaf6539595589422774925\system: A required privilege is not held by the client.
-
-	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:86)
-	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
-	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
-	at sun.nio.fs.WindowsFileSystemProvider.createSymbolicLink(WindowsFileSystemProvider.java:585)
-	at java.nio.file.Files.createSymbolicLink(Files.java:1043)
-	at org.pentaho.platform.osgi.KarafBoot$2.accept(KarafBoot.java:168)
-	at java.io.File.listFiles(File.java:1291)
-	at org.apache.commons.io.FileUtils.doCopyDirectory(FileUtils.java:1203)
-	at org.apache.commons.io.FileUtils.copyDirectory(FileUtils.java:1186)
-	at org.apache.commons.io.FileUtils.copyDirectory(FileUtils.java:1107)
-	at org.pentaho.platform.osgi.KarafBoot.startup(KarafBoot.java:158)
-	at org.pentaho.di.osgi.registryExtension.OSGIPluginRegistryExtension.init(OSGIPluginRegistryExtension.java:105)
-	at org.pentaho.di.core.plugins.PluginRegistry.init(PluginRegistry.java:557)
-	at org.pentaho.di.core.KettleClientEnvironment.init(KettleClientEnvironment.java:101)
-	at org.pentaho.di.core.KettleEnvironment.init(KettleEnvironment.java:97)
-	at org.pentaho.di.core.KettleEnvironment.init(KettleEnvironment.java:75)
-	at org.pentaho.di.pan.Pan.main(Pan.java:70)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
-	at org.pentaho.commons.launcher.Launcher.main(Launcher.java:92)
-00:05:28,779 INFO  [KarafInstance] 
+C:\GIT\data-integration>"C:\Program Files\Java\jdk1.8.0_66\bin\java.exe"  "-Xms1024m" "-Xmx2048m" "-XX:MaxPermSize=512m" "-Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2" "-Djava.library.path=libswt\win64" "-DKETTLE_HOME=" "-DKETTLE_REPOSITORY=" "-DKETTLE_USER=" "-DKETTLE_PASSWORD=" "-DKETTLE_PLUGIN_PACKAGES=" "-DKETTLE_LOG_SIZE_LIMIT=" "-DKETTLE_JNDI_ROOT=" -jar launcher\pentaho-application-launcher-6.1.0.1-196.jar -lib ..\libswt\win64  -main org.pentaho.di.pan.Pan /rep:"QDXX" /trans:"310_GenerateReport" /param:"DATE_FROM=2016-01-01 00:00:00.0" /param:"DATE_TO=2016-05-05 00:00:00.0" /param:"TENANT_NAME=Apeiron" /user:admin /pass: /dir:"/Reports/" /level:Basic 
+18:08:27,136 INFO  [KarafInstance] 
 *******************************************************************************
-*** Karaf Instance Number: 1 at C:\Users\Gajotres\AppData\Local\Temp\karaf6 ***
-***   539595589422774925\caches\pan\data-1                                  ***
-*** Karaf Port:8802                                                         ***
-*** OSGI Service Port:9051                                                  ***
+*** Karaf Instance Number: 2 at C:\GIT\data-integration\.\system\karaf\cach ***
+***   es\pan\data-1                                                         ***
+*** Karaf Port:8803                                                         ***
+*** OSGI Service Port:9052                                                  ***
 *******************************************************************************
-00:05:28,780 INFO  [KarafBoot] Checking to see if org.pentaho.clean.karaf.cache is enabled
-Updating configuration from org.ops4j.pax.url.mvn.cfg
-Creating configuration from org.apache.felix.fileinstall-deploy.cfg
-Creating configuration from org.pentaho.caching-default.cfg
-Updating configuration from org.apache.karaf.shell.cfg
-Updating configuration from org.ops4j.pax.logging.cfg
-Creating configuration from org.apache.activemq.server-default.cfg
-2016/05/19 00:05:30 - cfgbuilder - Warning: The configuration parameter [org] is not supported by the default configuration builder for scheme: sftp
-2016/05/19 00:05:33 - Pan - Logging is at level : Basic
-2016/05/19 00:05:33 - Pan - Start of run.
-2016/05/19 00:05:33 - RepositoriesMeta - Reading repositories XML file: C:\Users\Gajotres\.kettle\repositories.xml
-2016/05/19 00:05:35 - ReportingTest - Dispatching started for transformation [ReportingTest]
-2016/05/19 00:05:42 - Get System Info.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
-2016/05/19 00:05:42 - Database join.0 - Finished processing (I=2, O=0, R=1, W=1, U=0, E=0)
-2016/05/19 00:05:42 - Create Template and Output paths.0 - Optimization level set to 9.
-2016/05/19 00:05:42 - Create Template and Output paths.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
-2016/05/19 00:05:47 - Generate Reports.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
-2016/05/19 00:05:47 - Pan - Finished!
-2016/05/19 00:05:47 - Pan - Start=2016/05/19 00:05:33.878, Stop=2016/05/19 00:05:47.296
-2016/05/19 00:05:47 - Pan - Processing ended after 13 seconds.
-2016/05/19 00:05:47 - ReportingTest -  
-2016/05/19 00:05:47 - ReportingTest - Step Create Template and Output paths.0 ended successfully, processed 1 lines. ( 0 lines/s)
-2016/05/19 00:05:47 - ReportingTest - Step Generate Reports.0 ended successfully, processed 1 lines. ( 0 lines/s)
-2016/05/19 00:05:47 - ReportingTest - Step Database join.0 ended successfully, processed 1 lines. ( 0 lines/s)
-2016/05/19 00:05:47 - ReportingTest - Step Get System Info.0 ended successfully, processed 1 lines. ( 0 lines/s)
-00:05:48,040 ERROR [KarafBoot] Unable to delete karaf directory C:\Users\Gajotres\AppData\Local\Temp\karaf6539595589422774925
-java.io.IOException: Unable to delete file: C:\Users\Gajotres\AppData\Local\Temp\karaf6539595589422774925\system\org\apache\felix\org.apache.felix.framework\4.2.1\org.apache.felix.framework-4.2.1.jar
-	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:1919)
-	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:1399)
-	at org.apache.commons.io.FileUtils.deleteDirectory(FileUtils.java:1331)
-	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:1910)
-	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:1399)
-	at org.apache.commons.io.FileUtils.deleteDirectory(FileUtils.java:1331)
-	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:1910)
-	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:1399)
-	at org.apache.commons.io.FileUtils.deleteDirectory(FileUtils.java:1331)
-	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:1910)
-	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:1399)
-	at org.apache.commons.io.FileUtils.deleteDirectory(FileUtils.java:1331)
-	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:1910)
-	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:1399)
-	at org.apache.commons.io.FileUtils.deleteDirectory(FileUtils.java:1331)
-	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:1910)
-	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:1399)
-	at org.apache.commons.io.FileUtils.deleteDirectory(FileUtils.java:1331)
-	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:1910)
-	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:1399)
-	at org.apache.commons.io.FileUtils.deleteDirectory(FileUtils.java:1331)
-	at org.pentaho.platform.osgi.KarafBoot$1.run(KarafBoot.java:136)
-	at java.lang.Thread.run(Thread.java:745)
+18:08:27,136 INFO  [KarafBoot] Checking to see if org.pentaho.clean.karaf.cache is enabled
+2016/05/19 18:08:28 - cfgbuilder - Warning: The configuration parameter [org] is not supported by the default configuration builder for scheme: sftp
+2016/05/19 18:08:32 - Pan - Logging is at level : Basic
+2016/05/19 18:08:32 - Pan - Start of run.
+2016/05/19 18:08:32 - RepositoriesMeta - Reading repositories XML file: C:\Users\A0912\.kettle\repositories.xml
+2016/05/19 18:08:32 - 310_GenerateReport - Dispatching started for transformation [310_GenerateReport]
+2016/05/19 18:08:32 - RE_L_VS_BLG - Dispatching started for transformation [RE_L_VS_BLG]
+2016/05/19 18:08:32 - CalculateStateColor - Dispatching started for transformation [CalculateStateColor]
+2016/05/19 18:08:33 - RE_V_VS_BLG - Dispatching started for transformation [RE_V_VS_BLG]
+2016/05/19 18:08:33 - RE_L_VS_BVA - Dispatching started for transformation [RE_L_VS_BVA]
+2016/05/19 18:08:33 - RE_L_VS_DEF - Dispatching started for transformation [RE_L_VS_DEF]
+2016/05/19 18:08:33 - Get Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:08:33 - only current date.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:08:34 - Mondrian Input - USR_REQ.0 - Finished reading query, closing connection.
+2016/05/19 18:08:34 - Mondrian Input - USR_REQ.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2016/05/19 18:08:34 - Mondrian Input - Defect Count Prod/Preprod.0 - Finished reading query, closing connection.
+2016/05/19 18:08:34 - Mondrian Input - Defect Count Prod/Preprod.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2016/05/19 18:08:34 - Mondrian Input - LocChanged.0 - Finished reading query, closing connection.
+2016/05/19 18:08:34 - Mondrian Input - BusinessSize - Active Users.0 - Finished reading query, closing connection.
+2016/05/19 18:08:34 - Mondrian Input - Defect Count NOT Prod/Preprod.0 - Finished reading query, closing connection.
+2016/05/19 18:08:34 - Mondrian Input - BusinessSize - Active Users.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2016/05/19 18:08:34 - Mondrian Input - LocChanged.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2016/05/19 18:08:34 - Mondrian Input - Defect Count NOT Prod/Preprod.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2016/05/19 18:08:34 - Select values 2 2 2 2.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:08:34 - Select values 2 2 2 2 2 2.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:08:34 - Select values 2.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:08:34 - Select values 2 2 2 2 2.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:08:34 - Select values 2 2.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:08:34 - Mondrian Input - Incident COUNT.0 - Finished reading query, closing connection.
+2016/05/19 18:08:34 - Mondrian Input - Incident COUNT.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2016/05/19 18:08:34 - Select values 2 2 2.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:06 - Mondrian Input - LOC Total.0 - Finished reading query, closing connection.
+2016/05/19 18:09:06 - Mondrian Input - LOC Total.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2016/05/19 18:09:06 - Select values 2 2 2 2 2 2 2 2.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:07 - Mondrian Input - NCloc.0 - Finished reading query, closing connection.
+2016/05/19 18:09:07 - Mondrian Input - NCloc.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2016/05/19 18:09:07 - Select values 2 2 2 2 2 2 3.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:07 - Mondrian Input - Availibity - !MISSING ANALYSIS_DATE!.0 - Finished reading query, closing connection.
+2016/05/19 18:09:07 - Mondrian Input - Availibity - !MISSING ANALYSIS_DATE!.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2016/05/19 18:09:07 - Add constants.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:07 - Calculator.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:07 - Select values 2 2 2 2 2 2 2.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:07 - Modified Java Script Value.0 - Optimization level set to 9.
+2016/05/19 18:09:07 - If field value is null.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:07 - Join Rows (cartesian product).0 - Finished processing (I=0, O=0, R=11, W=1, U=0, E=0)
+2016/05/19 18:09:07 - Add constants (ALL NOT IMPLEMTENTED PARAMETERS).0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:07 - Mapping input specification.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:07 - If field value is null.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:07 - String operations.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:07 - Replace in string.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:07 - Select values 3.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:07 - Select values 2 2.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:08 - Replace in string 2.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:08 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:08 - Select values 2.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:08 - Mapping output specification.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:08 - CREATE L_VS_BVA.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:08 - Mapping input specification.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:08 - If field value is null.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:08 - Calculator.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:08 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:08 - Select values 2.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:08 - Mapping output specification.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:08 - CREATE V_VS_BLG.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:08 - Mapping input specification.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:08 - Create Template and Output paths.0 - Optimization level set to 9.
+2016/05/19 18:09:08 - If field value is null.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:08 - String operations.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:08 - Replace in string.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:08 - Select values 3.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:08 - Select values 2 2.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:08 - Replace in string 2.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:08 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:08 - Select values 2.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:08 - Mapping output specification.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:08 - CREATE L_VS_BLG.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:08 - Mapping input specification.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:08 - If field value is null.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:08 - Select values 4.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:08 - Calculator.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:08 - Add constants.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:08 - Calculator 2.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:08 - Replace in string.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:08 - Select values 3.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:08 - Select values 2 2.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:08 - Replace in string 2.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:08 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:08 - Select values 2.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:08 - Mapping output specification.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:08 - CREATE L_VS_DEF.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:08 - Add constants 2.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:08 - Mapping input specification.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:08 - If field value is null.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:08 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:08 - Calculator.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:08 - Modified Java Script Value.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:08 - Mapping output specification.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:08 - CREATE V_VS_BLG State Color.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:08 - Select values 2 3.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:08 - Create Template and Output paths.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:11 - Generate Reports.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/05/19 18:09:11 - Pan - Finished!
+2016/05/19 18:09:11 - Pan - Start=2016/05/19 18:08:32.131, Stop=2016/05/19 18:09:11.473
+2016/05/19 18:09:11 - Pan - Processing ended after 39 seconds.
+2016/05/19 18:09:11 - 310_GenerateReport -  
+2016/05/19 18:09:11 - 310_GenerateReport - Step Mondrian Input - LocChanged.0 ended successfully, processed 1 lines. ( 0 lines/s)
+2016/05/19 18:09:11 - 310_GenerateReport - Step Select values 2 2.0 ended successfully, processed 1 lines. ( 0 lines/s)
+2016/05/19 18:09:11 - 310_GenerateReport - Step Mondrian Input - Incident COUNT.0 ended successfully, processed 1 lines. ( 0 lines/s)
+2016/05/19 18:09:11 - 310_GenerateReport - Step Select values 2 2 2.0 ended successfully, processed 1 lines. ( 0 lines/s)
+2016/05/19 18:09:11 - 310_GenerateReport - Step Mondrian Input - Defect Count Prod/Preprod.0 ended successfully, processed 1 lines. ( 0 lines/s)
+2016/05/19 18:09:11 - 310_GenerateReport - Step Select values 2 2 2 2.0 ended successfully, processed 1 lines. ( 0 lines/s)
+2016/05/19 18:09:11 - 310_GenerateReport - Step Mondrian Input - Defect Count NOT Prod/Preprod.0 ended successfully, processed 1 lines. ( 0 lines/s)
+2016/05/19 18:09:11 - 310_GenerateReport - Step Select values 2 2 2 2 2.0 ended successfully, processed 1 lines. ( 0 lines/s)
+2016/05/19 18:09:11 - 310_GenerateReport - Step Mondrian Input - USR_REQ.0 ended successfully, processed 1 lines. ( 0 lines/s)
+2016/05/19 18:09:11 - 310_GenerateReport - Step Select values 2 2 2 2 2 2.0 ended successfully, processed 1 lines. ( 0 lines/s)
+2016/05/19 18:09:11 - 310_GenerateReport - Step Join Rows (cartesian product).0 ended successfully, processed 11 lines. ( 0 lines/s)
+2016/05/19 18:09:11 - 310_GenerateReport - Step Select values 2.0 ended successfully, processed 1 lines. ( 0 lines/s)
+2016/05/19 18:09:11 - 310_GenerateReport - Step Select values 2 2 2 2 2 2 2.0 ended successfully, processed 1 lines. ( 0 lines/s)
+2016/05/19 18:09:11 - 310_GenerateReport - Step If field value is null.0 ended successfully, processed 1 lines. ( 0 lines/s)
+2016/05/19 18:09:11 - 310_GenerateReport - Step Add constants (ALL NOT IMPLEMTENTED PARAMETERS).0 ended successfully, processed 1 lines. ( 0 lines/s)
+2016/05/19 18:09:11 - 310_GenerateReport - Step Mondrian Input - NCloc.0 ended successfully, processed 1 lines. ( 0 lines/s)
+2016/05/19 18:09:11 - 310_GenerateReport - Step Select values 2 2 2 2 2 2 3.0 ended successfully, processed 1 lines. ( 0 lines/s)
+2016/05/19 18:09:11 - 310_GenerateReport - Step Calculator.0 ended successfully, processed 1 lines. ( 0 lines/s)
+2016/05/19 18:09:11 - 310_GenerateReport - Step Mondrian Input - Availibity - !MISSING ANALYSIS_DATE!.0 ended successfully, processed 1 lines. ( 0 lines/s)
+2016/05/19 18:09:11 - 310_GenerateReport - Step Add constants.0 ended successfully, processed 1 lines. ( 0 lines/s)
+2016/05/19 18:09:11 - 310_GenerateReport - Step Mondrian Input - BusinessSize - Active Users.0 ended successfully, processed 1 lines. ( 0 lines/s)
+2016/05/19 18:09:11 - 310_GenerateReport - Step Mondrian Input - LOC Total.0 ended successfully, processed 1 lines. ( 0 lines/s)
+2016/05/19 18:09:11 - 310_GenerateReport - Step Select values 2 2 2 2 2 2 2 2.0 ended successfully, processed 1 lines. ( 0 lines/s)
+2016/05/19 18:09:11 - 310_GenerateReport - Step only current date.0 ended successfully, processed 1 lines. ( 0 lines/s)
+2016/05/19 18:09:11 - 310_GenerateReport - Step Add constants 2.0 ended successfully, processed 1 lines. ( 0 lines/s)
+2016/05/19 18:09:11 - 310_GenerateReport - Step CREATE V_VS_BLG State Color.0 ended successfully, processed 1 lines. ( 0 lines/s)
+2016/05/19 18:09:11 - 310_GenerateReport - Step CREATE L_VS_BLG.0 ended successfully, processed 1 lines. ( 0 lines/s)
+2016/05/19 18:09:11 - 310_GenerateReport - Step CREATE L_VS_DEF.0 ended successfully, processed 1 lines. ( 0 lines/s)
+2016/05/19 18:09:11 - 310_GenerateReport - Step CREATE L_VS_BVA.0 ended successfully, processed 1 lines. ( 0 lines/s)
+2016/05/19 18:09:11 - 310_GenerateReport - Step CREATE V_VS_BLG.0 ended successfully, processed 1 lines. ( 0 lines/s)
+2016/05/19 18:09:11 - 310_GenerateReport - Step Select values 2 3.0 ended successfully, processed 1 lines. ( 0 lines/s)
+2016/05/19 18:09:11 - 310_GenerateReport - Step Create Template and Output paths.0 ended successfully, processed 1 lines. ( 0 lines/s)
+2016/05/19 18:09:11 - 310_GenerateReport - Step Generate Reports.0 ended successfully, processed 1 lines. ( 0 lines/s)
+2016/05/19 18:09:11 - 310_GenerateReport - Step Get Variables.0 ended successfully, processed 1 lines. ( 0 lines/s)

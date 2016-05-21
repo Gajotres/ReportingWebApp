@@ -1,40 +1,63 @@
+<div id="loadingWidgetSave" ng-show="showLoader">
+  <div class="vertical-center-container">
+    <div class="innner-container">
+    <img alt="Loading  Content" src="img/ajax-loader.gif" />
+    </div>
+  </div>
+</div>
 <div class="container">
-
-  <div class="row" style="margin: 10px 0;">
-
-  </div>	
-
+  <div class="row" style="margin: 10px 0;"></div>	
   <div class="row">
-    <div class="col-md-8 col-lg-8 visible-md-block visible-lg-block"></div>
-    <div class="col-md-8 col-lg-8">
+    <div class="col-md-6 col-lg-6 visible-md-block visible-lg-block"></div>
+    <div class="col-md-12 col-lg-12">
 
-      <h4>Start Date</h4>
-      <md-datepicker ng-model="input.start_date" md-placeholder="Enter start date"></md-datepicker>
+      <md-content>
 
-      <h4>End Date</h4>
-      <md-datepicker ng-model="input.end_date" md-placeholder="Enter end date"></md-datepicker><br/>
+        <section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
 
-      <h4>Tenant</h4>
-      <md-select ng-model="selectedTenant">
-        <md-option ng-value="tenant" ng-repeat="tenant in tenants">{{ tenant.name }}</md-option>
-      </md-select>   
+          <h4>Start Date</h4>
+          <md-datepicker ng-model="input.start_date" md-placeholder="Enter start date"></md-datepicker>
 
-      <md-button class="md-raised" ng-click="generateReport()">Generate Report</md-button>      
+        </section><br/><br/>
+
+        <section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
+
+          <h4>End Date</h4>
+          <md-datepicker ng-model="input.end_date" md-placeholder="Enter end date"></md-datepicker><br/>
+
+        </section><br/><br/>
+
+        <section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
+          <md-input-container>
+
+            <label>Please select a Tenant</label>
+            <md-select ng-model="selectedTenant">
+              <md-option ng-value="tenant" ng-repeat="tenant in tenants">{{ tenant.name }}</md-option>
+            </md-select>   
+
+          </md-input-container>
+        </section><br/><br/>
+
+        <section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
+          <md-button class="md-raised" ng-click="generateReport()">Generate Report</md-button>      
+        </section>
+
+      </md-content>
 
     </div>
-    <div class="col-md-8 col-lg-8 visible-md-block visible-lg-block"></div>
+    <div class="col-md-6 col-lg-6 visible-md-block visible-lg-block"></div>
   </div> 
 
   <div class="row">
-    <div class="col-md-8 col-lg-8 visible-md-block visible-lg-block"></div>
-    <div class="col-md-8 col-lg-8" style="padding-top: 50px;">
+    <div class="col-md-6 col-lg-6 visible-md-block visible-lg-block"></div>
+    <div class="col-md-12 col-lg-12" style="padding-top: 50px;">
       <md-content>
         <md-list>
           <md-subheader class="md-no-sticky">Previously generated reports</md-subheader>
           <md-list-item class="md-3-line" ng-repeat="file in files">
             <img ng-src="img/pdf.png" class="md-avatar" />
             <div class="md-list-item-text" layout="column">
-              <h3><strong>File name: </strong> <a target="_blank" src="_self" style="cursor: pointer;">{{file.name}}</a></h3>
+              <h3><strong>File name: </strong> <a ng-click="downloadReport(file.name)" style="cursor: pointer;">{{file.name}}</a></h3>
               <h4><strong>Created:</strong> {{file.created}}</h4>
               <p><strong>Size:</strong> {{file.size}} byts</p>
             </div>
@@ -42,7 +65,7 @@
         </md-list>
       </md-content>
     </div>
-    <div class="col-md-8 col-lg-8 visible-md-block visible-lg-block"></div>    
+    <div class="col-md-6 col-lg-6 visible-md-block visible-lg-block"></div>    
   </div> 
 
 </div>

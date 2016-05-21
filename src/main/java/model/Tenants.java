@@ -18,6 +18,10 @@ public class Tenants {
 	@Column(name="ime", length=64, nullable=false)
 	private String name;
 
+	
+	@Column(name="tenant_name", length=64, nullable=false)
+	private String tenantName;
+
 	public int getId() {
 		return id;
 	}
@@ -32,5 +36,14 @@ public class Tenants {
 
 	public void setName(String name) {
 		this.name = name;
-	}		
+	}
+
+	public String getTenantName() {
+		return tenantName;
+	}
+
+	public void setTenantName(String tenantName) {
+		this.tenantName = tenantName;
+	}
+
 }
